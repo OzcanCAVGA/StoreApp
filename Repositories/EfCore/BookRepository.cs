@@ -22,8 +22,9 @@ namespace Repositories.EfCore
             FindAll(trackChanges);
 
 
-        public IQueryable<Book> GetOneBookById(int id, bool trackChanges) =>
-                        FindByCondition(b => b.ID.Equals(id), trackChanges);
+        public Book GetOneBookById(int id, bool trackChanges) =>
+                        FindByCondition(b => b.ID.Equals(id), trackChanges)
+                        .SingleOrDefault();
 
         public void UpdateOneBook(Book book) => Delete(book);
     }
