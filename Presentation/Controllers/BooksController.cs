@@ -1,15 +1,15 @@
 ﻿using Entities.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contract;
 
-namespace WebAPI.Controllers
+namespace Presentation.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class BooksController : ControllerBase
     {
-
         private readonly IServiceManager _manager;
 
         public BooksController(IServiceManager manager)
@@ -73,7 +73,7 @@ namespace WebAPI.Controllers
         {
             try
             {
-                if(book is null)
+                if (book is null)
                     return BadRequest();
 
                 _manager.BookService.UpdateOneBook(id, book, true);
