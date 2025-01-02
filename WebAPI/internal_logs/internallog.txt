@@ -1,0 +1,5 @@
+2025-01-02 22:04:08.8049 Info Registered target NLog.Targets.FileTarget(Name=file)
+2025-01-02 22:04:08.8159 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2025-01-02 22:04:08.8280 Info Validating config: TargetNames=file, ConfigItems=12, FilePath=C:\Users\Ozcan\source\repos\bsStoreApp\WebAPI\bin\Debug\net8.0\nlog.config
+2025-01-02 22:04:08.8379 Info Configuration initialized.
+2025-01-02 22:04:09.1676 Info Validating config: TargetNames=file, ConfigItems=12, FilePath=C:\Users\Ozcan\source\repos\bsStoreApp\WebAPI\bin\Debug\net8.0\nlog.config
