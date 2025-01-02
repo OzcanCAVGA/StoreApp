@@ -1,11 +1,12 @@
 ﻿using Repositories.Contracts;
+using Services.Contract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services.Contract
+namespace Services
 {
     public class ServiceManager : IServiceManager
     {

@@ -1,13 +1,14 @@
 ﻿
 using Entities.Models;
 using Repositories.Contracts;
+using Services.Contract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services.Contract
+namespace Services
 {
     public class BookManager : IBookService
     {
@@ -44,7 +45,7 @@ namespace Services.Contract
 
         public Book GetOneBookById(int id, bool trackChanges)
         {
-           return _manager.Book.GetOneBookById(id,trackChanges);
+            return _manager.Book.GetOneBookById(id, trackChanges);
         }
 
         public void UpdateOneBook(int id, Book book, bool trackChanges)
@@ -53,7 +54,7 @@ namespace Services.Contract
             if (entity is null)
                 throw new Exception($"Book with id {id} not found");
 
-            if(book is null)
+            if (book is null)
                 throw new ArgumentNullException(nameof(book));
 
             entity.Title = book.Title;

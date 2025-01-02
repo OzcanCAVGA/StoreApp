@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Repositories.EfCore;
+using Services;
 using Services.Contract;
 
 namespace WebAPI.Extensions
